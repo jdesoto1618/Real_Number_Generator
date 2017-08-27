@@ -9,14 +9,14 @@ function makeReal(num) {
 			//Initialize empty array
 			var arr = [];
 			//Generate the unit position as a 0 or 1. This can be changed as needed
-    	arr.push(Math.floor(Math.random()*2));
+    			arr.push(Math.floor(Math.random()*2));
 			//Place a period after the unit position
 			arr.push(".");
 			//For loop stops at num. This will generate a total of num digits, since i starts at 0
 			for(var i=0; i<num; i++) {
 				//Generate the numbers 0-9 for all other placeholders
 				arr.push(Math.floor(Math.random()*10));
-	    }
+	    		}
 			//Must parseFloat, since this is not an integer. And it must be on the return statement
 			return parseFloat(arr.join(""));
 		}
